@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>JS Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <meta charset="UTF-8">
+  <meta name="author" content="Samuel Pereira Barreto">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta names="keywords"
+    content="Interface, FrontEnd, developer, web, JavaSript, CSS, HTML, Samuel Pereira, Calculator, Git">
+  <meta name="description"
+    content="A simple web calculator made with html css and js by Samuel Pereira (@samubarreto on Github)">
+
+  <link rel="icon" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body class="bodyTheme1 js-body-theme" onkeydown="detectKeyPress(event)">
+  <div class="main-container1 js-main-container">
+    <section class="result">
+      <p class="js-calculus calculus1"></p>
+    </section>
+
+    <section class="numbers-operators">
+      <button onclick="calcular('C')" class="special1 special js-C-button"
+        style="background-color: #a5a5a5; color: #222222;">C</button>
+      <button onclick="calcular(' ( ')" class="special1 special js-P1-button"
+        style="background-color: #a5a5a5; color: #222222;">&#40;</button>
+      <button onclick="calcular(' ) ')" class="special1 special js-P2-button"
+        style="background-color: #a5a5a5; color: #222222;">&#41;</button>
+      <button onclick="calcular(' / ')" class="special1 special js-divide-button">/</button>
+
+      <button onclick="calcular('7')" class="number1 number">7</button>
+      <button onclick="calcular('8')" class="number1 number">8</button>
+      <button onclick="calcular('9')" class="number1 number">9</button>
+      <button onclick="calcular(' * ')" class="special1 special js-mult-button">*</button>
+
+      <button onclick="calcular('4')" class="number1 number">4</button>
+      <button onclick="calcular('5')" class="number1 number">5</button>
+      <button onclick="calcular('6')" class="number1 number">6</button>
+      <button onclick="calcular(' - ')" class="special1 special js-menos-button">-</button>
+
+      <button onclick="calcular('1')" class="number1 number">1</button>
+      <button onclick="calcular('2')" class="number1 number">2</button>
+      <button onclick="calcular('3')" class="number1 number">3</button>
+      <button onclick="calcular(' + ')" class="special1 special js-mais-button">+</button>
+
+      <button onclick="calcular('0')" class="number number1 double-column" style="padding: 16px 42px;">0</button>
+      <button onclick="calcular('.')" class="dot1 dot js-dot-button">.</button>
+      <button onclick="calcular(' = ')" class="special1 equal js-equal-button">=</button>
+    </section>
+  </div>
+  <div class="others">
+    <a href="https://github.com/shreyaaa2403" target="_blank" style="text-decoration:none;">
+      <button class="github-icon">
+        <img src="github-mark1.png" alt="github-logo" style="height:17px; margin: 0px 10px;">
+        @shreyaaa2403
+
+      </button>
+    </a>
+    <button class="change-theme-light js-change-theme" onclick="alterarTema()">
+      <img src="theme-icon-moon.png" alt="dark-theme-icon" style="height:17px; margin: 0px 10px; opacity: 0.85;"
+        class="theme-icon js-theme-icon">
+      Change to dark mode
+    </button>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+
+</html>
